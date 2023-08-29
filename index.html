@@ -1,0 +1,29 @@
+<html>
+
+<head>
+	
+</head>
+
+<body>
+	
+
+		<button id="btn">change color</button>
+
+	
+	<script>
+		let back=document.querySelector('body');
+		let btn=document.getElementById('btn');
+        let color=['red','orange','yellow'];
+        btn.addEventListener('click',function(){
+            const colorindex=parseInt(Math.random()*color.length);
+            back.style.backgroundColor=color[colorindex];
+        });
+
+		
+
+		
+	</script>
+
+</body>
+
+</html>
